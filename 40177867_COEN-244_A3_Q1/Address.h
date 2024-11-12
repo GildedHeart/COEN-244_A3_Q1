@@ -22,7 +22,7 @@ public:
 		std::string& newMunicipalicty,
 		std::string& newRegion,
 		std::string& newCode)
-	{}
+		;
 
 	// Setters
 
