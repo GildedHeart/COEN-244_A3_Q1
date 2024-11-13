@@ -128,11 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Address.h" />
+    <ClInclude Include="OvernightPackage.h" />
     <ClInclude Include="Package.h" />
+    <ClInclude Include="TwoDayPackage.h" />
+    <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Address.cpp" />
+    <ClCompile Include="OvernightPackage.cpp" />
     <ClCompile Include="Package.cpp" />
+    <ClCompile Include="testDriver.cpp" />
+    <ClCompile Include="TwoDayPackage.cpp" />
+    <ClCompile Include="Utility.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

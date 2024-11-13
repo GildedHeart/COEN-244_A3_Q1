@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <sstream>
 
 class Address
 {
@@ -17,12 +18,12 @@ public:
 
 	Address();
 	Address(
-		std::string& newName,
-		std::string& newStreetAddress,
-		std::string& newMunicipalicty,
-		std::string& newRegion,
-		std::string& newCode)
-		;
+		std::string,
+		std::string,
+		std::string,
+		std::string,
+		std::string);
+	Address(const Address& newAddress);
 
 	// Setters
 
@@ -39,5 +40,9 @@ public:
 	std::string	getMunicipality() const;
 	std::string	getRegion() const;
 	std::string	getCode() const;
+
+	// Method
+
+	std::string getInfo() const;
 };
 
