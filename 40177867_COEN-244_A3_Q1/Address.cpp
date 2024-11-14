@@ -50,5 +50,5 @@ std::string Address::getInfo() const {
 		<< streetAddress << "\n"
 		<< municipality << ", " << region << "\n"
 		<< code << "\n";
-	return output.str();
+	return (output.str());
 }

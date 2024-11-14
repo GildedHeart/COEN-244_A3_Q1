@@ -95,7 +95,7 @@ void testDynamicBinding() {
 
 	charLine();
 
-	std::cout << "The total coast of all the packages is: &" << totalCost;
+	std::cout << "The total coast of all the packages is: $" << totalCost;
 
 	charLine();
 
