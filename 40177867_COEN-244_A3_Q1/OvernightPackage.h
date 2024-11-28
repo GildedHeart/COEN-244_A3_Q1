@@ -3,7 +3,7 @@
 class OvernightPackage :
     public Package
 {
-protected:
+private:
 
 	double extraPerOz;
 

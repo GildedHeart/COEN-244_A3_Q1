@@ -4,11 +4,11 @@
 
 Address::Address() : name(""), streetAddress(""), municipality(""), region(""), code(""){}
 Address::Address(
-	std::string newName,
-	std::string newStreetAddress,
-	std::string newMunicipality,
-	std::string newRegion,
-	std::string newCode)
+	const std::string& newName,
+	const std::string& newStreetAddress,
+	const std::string& newMunicipality,
+	const std::string& newRegion,
+	const std::string& newCode)
 	:
 	name(newName),
 	streetAddress(newStreetAddress),
@@ -16,14 +16,15 @@ Address::Address(
 	region(newRegion),
 	code(newCode)
 {}
-Address::Address(const Address& newAddress)
+Address::Address(const Address& newAddress) 
 	:
 	name(newAddress.name),
 	streetAddress(newAddress.streetAddress),
 	municipality(newAddress.municipality),
 	region(newAddress.region),
-	code(newAddress.code) 
-{}
+	code(newAddress.code)
+{
+} 
 
 
 // Setters

@@ -19,11 +19,11 @@ public:
 
 	Address();
 	Address(
-		std::string,
-		std::string,
-		std::string,
-		std::string,
-		std::string);
+		const std::string &,
+		const std::string &,
+		const std::string &,
+		const std::string &,
+		const std::string &);
 	Address(const Address& newAddress);
 
 	// Setters

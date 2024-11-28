@@ -52,11 +52,11 @@ double Package::calculateCost() const { return weightInOz * costPerOz;}
 
 void Package::setToFrom(
 	int i,
-	const std::string newName,
-	const std::string newStreetAddress,
-	const std::string newMunicipality,
-	const std::string newRegion,
-	const std::string newCode) 
+	const std::string& newName,
+	const std::string& newStreetAddress,
+	const std::string& newMunicipality,
+	const std::string& newRegion,
+	const std::string& newCode) 
 {
 	toFrom[i].setName(newName);
 	toFrom[i].setStreetAddress(newStreetAddress);
@@ -74,6 +74,9 @@ std::string Package::getToFrom(int i) const {
 	case 1:
 		output << "From:\n";
 			break;
+	default:
+		throw std::invalid_argument("Value is out of range.");
+		break;
 	}
 	output << toFrom[i].getInfo() << std::endl;
 	return output.str();

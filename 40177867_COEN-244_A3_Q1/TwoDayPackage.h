@@ -3,7 +3,7 @@
 class TwoDayPackage :
     public Package
 {
-protected: 
+private: 
 
     const double flatFee = 15.5;
 
@@ -16,7 +16,7 @@ public:
 
 	// Methods
 
-	virtual double calculateCost() const final override;
+	double calculateCost() const final;
 
 };
 

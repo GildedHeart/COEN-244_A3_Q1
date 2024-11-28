@@ -34,7 +34,7 @@ public:
 	// Methods
 
 	virtual double calculateCost() const;
-	void setToFrom(int, const std::string, const std::string, const std::string, const std::string, const std::string);
+	void setToFrom(int, const std::string&, const std::string&, const std::string&, const std::string&, const std::string&);
 	std::string getToFrom(int) const;
 
 };
